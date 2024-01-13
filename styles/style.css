@@ -247,6 +247,20 @@ main {
     width: 160px;
 }
 
+.footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 50px;
+    padding: 50px;
+}
+
+.footer p {
+    color: #424242;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 
 
@@ -297,6 +311,15 @@ main {
         gap: 20px;
     }
 
+    .footer {
+
+        margin: 100px 240px;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80vw;
+
+    }
+
 }
 
 /* medium or tap devices */
@@ -317,6 +340,15 @@ main {
     .features-img img {
         width: 100%;
         margin-left: 0;
+    }
+
+    .footer {
+
+        margin: 100px 240px;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80vw;
+
     }
 
 }
