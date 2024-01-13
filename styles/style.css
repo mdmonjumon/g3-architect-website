@@ -9,6 +9,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-light-gray {
+    color: #727272;
+}
+
 .btn-primary {
     border-radius: 8px;
     color: #FFF;
@@ -74,14 +78,65 @@ nav li a {
 
 }
 
-.banner-description {
-    color: #727272;
-}
 
-.banner img{
+
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
+
+
+
+
+
+
+/* main styles */
+
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams style */
+
+.teams-container {
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    font-weight: 500;
+}
+
+.teams-title .of-our {
+    color: #131313;
+    font-weight: 700;
+}
+
+.teams-title .feat {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
 
 
 
@@ -90,68 +145,36 @@ nav li a {
 /* mobile or small devices */
 
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 
 /* medium or tap devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
-    header{
+    header {
         padding: 40px;
     }
 
-    nav{
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    
-}
 
-
-/* main styles */
-
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-/* teams style */
-
-.teams-container{
-    margin-top: 130px;
-    display: flex;
-    align-items: center;
-}
-
-.teams-img-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    
-}
-
-.teams-content{
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-.teams-title{
-    font-size: 2.8rem;
-}
-.teams-title .quick-list{
-    color: #727272;
-    font-weight: 500;
-}
-.teams-title .of-our{
-    color: #131313;
-    font-weight: 700;
-}
-.teams-title .feat{
-    color: #FF900E;
-    font-weight: 700;
 }
